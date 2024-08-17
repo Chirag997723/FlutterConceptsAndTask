@@ -25,6 +25,7 @@ import 'package:flutter_practice_app/old_file/provider/theme_provider.dart';
 import 'package:flutter_practice_app/old_file/small_taks/smallTaks.dart';
 import 'package:flutter_practice_app/old_file/sqlite/displayDataBase.dart';
 import 'package:flutter_practice_app/old_file/state_management/state_management.dart';
+import 'package:flutter_practice_app/ui/method_chanel.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -51,6 +52,7 @@ class MainActivity extends StatelessWidget {
     'SmallTaks',
     'ApiCalling',
     'StateManagement',
+    'MethodChanel',
   ];
 
   DateTime? currentBackPressTime;
@@ -205,6 +207,9 @@ class MainActivity extends StatelessWidget {
                           break;
                         case 17:
                           Get.to(StateManagement());
+                          break;
+                        case 18:
+                          Get.to(MethodChanel());
                           break;
                       }
                     },
