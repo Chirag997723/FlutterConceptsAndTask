@@ -19,7 +19,7 @@ public class MainActivity extends FlutterActivity {
                             if (call.method.equals("sendString")) {
                                 String receivedString = call.argument("sendSms");
                                 Log.i("androidLog", receivedString);
-                                result.success("String received successfully");
+                                result.success("success");
                             }else {
                                 result.notImplemented();
                             }

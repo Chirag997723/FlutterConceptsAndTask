@@ -25,7 +25,8 @@ class MethodChanel extends StatelessWidget {
 
   Future<void> sendToAndroid(String name) async {
     try {
-      await chanel.invokeMethod('sendString', {"sendSms": name});
+      final states = await chanel.invokeMethod('sendString', {"sendSms": name});
+      print('android--> $states');
     } on Exception catch (e) {
       print(e);
     }
