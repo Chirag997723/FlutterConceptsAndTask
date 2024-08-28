@@ -8,7 +8,6 @@ class ProductsPage extends StatefulWidget {
 }
 
 class _ProductsPageState extends State<ProductsPage> {
-  
   List<Product2> _products = [];
   final chanel = MethodChannel('myFirstMethodChannel');
 
