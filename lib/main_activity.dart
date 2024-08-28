@@ -209,7 +209,7 @@ class MainActivity extends StatelessWidget {
                           Get.to(StateManagement());
                           break;
                         case 18:
-                          Get.to(MethodChanel());
+                          Get.to(ProductsPage());
                           break;
                       }
                     },
