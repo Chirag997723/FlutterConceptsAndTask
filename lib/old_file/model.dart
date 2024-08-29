@@ -1,6 +1,3 @@
-import 'package:html/parser.dart' show parseFragment;
-
-import 'package:html_unescape/html_unescape.dart';
 
 class Product {
   final int id;
