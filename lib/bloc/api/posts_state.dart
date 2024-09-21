@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_practice_app/old_file/model.dart';
+import 'package:flutter_practice_app/models/model.dart';
 import 'package:flutter_practice_app/utils/enums.dart';
 
 class PostsStates extends Equatable {

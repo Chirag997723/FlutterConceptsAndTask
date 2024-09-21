@@ -14,12 +14,12 @@ import 'package:flutter_practice_app/bloc/theme/theme_state.dart';
 import 'package:flutter_practice_app/bloc/txt_color/txt_color_bloc.dart';
 import 'package:flutter_practice_app/bloc/users/users_bloc.dart';
 
-import 'package:flutter_practice_app/old_file/editor/truecaller_overlay.dart';
-import 'package:flutter_practice_app/old_file/firebase/for_sms/message.dart';
-import 'package:flutter_practice_app/old_file/firebase_options.dart';
-import 'package:flutter_practice_app/old_file/loginSignupPre/loginSignupPre.dart';
-import 'package:flutter_practice_app/main_activity.dart';
-import 'package:flutter_practice_app/old_file/provider/theme_provider.dart';
+import 'package:flutter_practice_app/screen/truecaller_overlay.dart';
+import 'package:flutter_practice_app/firebase/for_sms/message.dart';
+import 'package:flutter_practice_app/firebase_options.dart';
+import 'package:flutter_practice_app/screen/loginSignupPre/loginSignupPre.dart';
+import 'package:flutter_practice_app/screen/main_activity.dart';
+import 'package:flutter_practice_app/provider/theme_provider.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -159,7 +159,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
 //Firebase Notification
 @pragma('vm:entry-point')
-Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async{
   await setupFlutterNotifications();
   showFlutterNotification(message);
 

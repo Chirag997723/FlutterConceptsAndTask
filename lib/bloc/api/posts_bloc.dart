@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_practice_app/bloc/api/posts_event.dart';
 import 'package:flutter_practice_app/bloc/api/posts_state.dart';
-import 'package:flutter_practice_app/old_file/mvc_ex/api_repository.dart';
+import 'package:flutter_practice_app/repository/api_repository.dart';
 import 'package:flutter_practice_app/utils/enums.dart';
 
 class PostsBloc extends Bloc<PostsEvent, PostsStates> {
